@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부루마블(오프라인)</title>
+  <style>
+    tr{
+      height: calc(60% / 11); /* 60% of viewport height divided by 11 */
+      width: 60%;
+    }
+    .tableCover{
+      perspective: 300px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.532), 0 6px 6px rgba(0,0,0,0.532);
+      background: url(./images/wood.avif);
+      border-radius: 5px;
+      border: solid 4px goldenrod;
+    }
+    .mainCenter{
+      background: url(./images/mainCenter.svg);
+      background-size: contain;
+      width: 580px;
+      height: 580px;
+      border-radius: 5px;
+      border:3px solid white !important;
+      }
+      .tableCover img {
+        border-radius: 5px;
+        transition: transform 0.5s ease, box-shadow 0.5s ease; /* 부드러운 전환 */
+        border: 2px solid transparent; /* 테두리 추가 */
+      }
+      .tableX{
+        border-radius: 5px;
+        transform-style: preserve-3d; /* 3D 변환 유지 */
+        width: 57;
+        height: 94;
+      }
+      .tableY1, .tableY2{
+        width: 94;
+        height: 57;
+      }
+      .tableX:hover img {
+        transform: scale(1.4) rotateX(60deg) skewX(-10deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+      }
+      .tableY1:hover img {
+        transform: scale(1.4)rotateZ(-90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+      }
+      .tableY2:hover img {
+        transform: scale(1.4)rotateZ(90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+      }
+    body{
+      background-image: url("./images/98089747-대리석-추상-아크릴-배경입니다-자연-블루-마블-작품-텍스처-골드-반짝이.jpg");
+      background-size: contain;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+  <div>
+    <table class="tableCover" border="1">
+      <caption>부루마블 판</caption>
+      <tr>
+      <th class="tableX"><img src="./images/cards/사회복지기금처 뚱뚱이 카드.svg" alt="뚱뚱이 카드"></th>
+      <th class="tableX"><img src="./images/cards/부에로사이렌스 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/녹색_황금열쇠.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/상파울루 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/시드니 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/부산 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/하와이 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/리스본 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/퀸엘리자베스호 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/마드리드 카드.svg" alt="카드"></th>
+      <th class="tableX"><img src="./images/cards/우주 여행 뚱뚱이 카드.svg" alt="뚱뚱이 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/오타와 카드.svg" alt="가로 카드"></th>
+        <th colspan="9" rowspan="9"><div class="mainCenter"></div></th>
+        <th class="tableY2"><img src="./images/cards/도쿄 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/베를린 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/컬럼비아호 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/노란_황금열쇠.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/파리 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/베른 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/로마 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/콩코드여객기 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/파란_황금열쇠.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/스톡콜롬 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/런던 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/코펜하겐 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/뉴욕 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/노란_황금열쇠.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/사회복지기금 접수처 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableY1"><img src="./images/cards/아테네 카드.svg" alt="가로 카드"></th>
+        <th class="tableY2"><img src="./images/cards/서울 카드.svg" alt="가로 카드"></th>
+      </tr>
+      <tr>
+        <th class="tableX"><img src="./images/cards/무인도 뚱뚱이 카드.svg" alt="뚱뚱이 카드"></th>
+        <th class="tableX"><img src="./images/cards/이스탄불 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/카이로 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/빨간_황금열쇠.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/싱가포르 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/제주 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/마닐라 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/베이징 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/빨간_황금열쇠.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/타이베이 카드.svg" alt="카드"></th>
+        <th class="tableX"><img src="./images/cards/출발지 뜡뜡이 카드.svg" alt="뚱뚱이 카드"></th>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
