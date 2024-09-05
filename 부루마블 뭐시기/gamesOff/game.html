@@ -12,6 +12,7 @@
     .tableCover{
       perspective: 300px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.532), 0 6px 6px rgba(0,0,0,0.532);
+      background-size: contain;
       background: url(./images/wood.avif);
       border-radius: 5px;
       border: solid 4px goldenrod;
@@ -23,34 +24,34 @@
       height: 580px;
       border-radius: 5px;
       border:3px solid white !important;
-      }
-      .tableCover img {
-        border-radius: 5px;
-        transition: transform 0.5s ease, box-shadow 0.5s ease; /* 부드러운 전환 */
-        border: 2px solid transparent; /* 테두리 추가 */
-      }
-      .tableX{
-        border-radius: 5px;
-        transform-style: preserve-3d; /* 3D 변환 유지 */
-        width: 57;
-        height: 94;
-      }
-      .tableY1, .tableY2{
-        width: 94;
-        height: 57;
-      }
-      .tableX:hover img {
-        transform: scale(1.4) rotateX(60deg) skewX(-10deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
-      }
-      .tableY1:hover img {
-        transform: scale(1.4)rotateZ(-90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
-      }
-      .tableY2:hover img {
-        transform: scale(1.4)rotateZ(90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
-      }
+    }
+    .tableCover img {
+      border-radius: 5px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease; /* 부드러운 전환 */
+      border: 2px solid transparent; /* 테두리 추가 */
+    }
+    .tableX{
+      border-radius: 5px;
+      transform-style: preserve-3d; /* 3D 변환 유지 */
+      width: 57;
+      height: 94;
+    }
+    .tableY1, .tableY2{
+      width: 94;
+      height: 57;
+    }
+    .tableX:hover img {
+      transform: scale(1.4) rotateX(60deg) skewX(-10deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+    }
+    .tableY1:hover img {
+      transform: scale(1.4)rotateZ(-90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+    }
+    .tableY2:hover img {
+      transform: scale(1.4)rotateZ(90deg); /* X축 회전과 skewX로 사다리꼴 모양 구현 */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 6px 6px rgba(0, 0, 0, 0.532);
+    }
     body{
       background-image: url("./images/98089747-대리석-추상-아크릴-배경입니다-자연-블루-마블-작품-텍스처-골드-반짝이.jpg");
       background-size: contain;
